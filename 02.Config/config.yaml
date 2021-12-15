@@ -1,0 +1,98 @@
+#################
+#     Path      #
+#################
+
+
+path:
+  # Raw data
+  data:
+    # RNAseq
+    rna: 00.Data/data/RNAseq
+    # Methylation
+    methylation:
+      tissue: 00.Data/data/Methylation/Tissue
+      blood: 00.Data/data/Methylation/Blood
+    # Public data
+    public: 00.Data/data/Public_SRA
+  # Results
+  result:
+    # Part 1 : RNAseq analysis
+    RNAseq: 05.Results/01.RNAsequencing_analysis
+    # Part 2 : BCR/TCR analysis
+    BCR_TCR: 05.Results/02.BCR_TCR_analysis
+    # Part 3 : Tissue methylation analysis
+    Tissue_methylation: 05.Results/03.Tissue_methylation_analysis
+    # Part 4 : Transcription factor analysis
+    TF:
+      # 4.1. ReMAP
+      ReMAP: 05.Results/04.Transcription_factor_analysis/ReMAP
+      # 4.2. Ologram
+      Ologram: 05.Results/04.Transcription_factor_analysis/Ologram
+    # Part 5 : Blood methylation analysis
+    Blood:
+      # 5.1. DMPs analysis
+      Blood_methylation: 05.Results/05.Blood_methylation_analysis
+      # 5.2. Biomarkers
+      Biomarkers:  05.Results/05.Blood_methylation_analysis/02.Biomarkers
+    # Part 6 : Enrichment analysis
+    Enrichment:
+      # 6.1. severeCCC
+      Enrichment_sevCCC: 05.Results/06.Enrichment_analysis/01.sevCCC
+      # 6.2. moderateCCC
+      Enrichment_modCCC: 05.Results/06.Enrichment_analysis/02.modCCC
+    HLA: 05.Results/HLA
+
+# Reference files
+ref:
+  fasta: 00.Data/ref/hg19.fa
+  gtf: 00.Data/ref/hg19.gtf
+  phenoTable: 00.Data/ref/phenoTable.csv
+  convTable: 00.Data/ref/Conversion_ID_Name.tab
+  ReMAP: 00.Data/ref/ReMAP_hg19_allCellLines.bed
+  genePromoter: 00.Data/ref/genePromoter.tab
+
+container:
+  RNAseq: 01.Container/RNAseq/RNAseq.img
+  qualimap: 01.Container/RNAseq/qualimap-build-31-08-20/qualimap
+  BCR_TCR: 01.Container/BCR_TCR/BCR_TCR.img
+  MiXCR: 01.Container/BCR_TCR/mixcr/mixcr.jar
+  HLA: 01.Container/HLA/HLA.img
+  arcasHLA: 01.Container/HLA/arcasHLA-master/arcasHLA
+  Methylation: 01.Container/Methylation/Methylation.img
+  Ologram: 01.Container/Ologram/Ologram.img
+
+
+
+  ##############
+  # Parameters #
+  ##############
+
+
+threads:
+  low: 4
+  medium: 10
+  high: 20
+
+trimmomatic:
+  format: "PE"
+  phred: "phred33"
+  HEADCROP: "15"
+  TRAILING: "3"
+  SLIDINGWINDOW: "4:15"
+  MINLEN: "20"
+  adaptateurs: /usr/share/trimmomatic/TruSeq3-PE.fa:2:30:10
+
+STARpass:
+  Overhang: 149
+  outSAMtype: BAM SortedByCoordinate
+  outReadsUnmapped: Fastx
+
+DESeq2:
+  FCcutoff: 1.5
+
+Methylation_tissue:
+  FCcutoff: 0.2
+
+TFs:
+  Ologram_complexSize: 4
+  Ologram_heritance: 0.5

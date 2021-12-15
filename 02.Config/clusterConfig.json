@@ -1,0 +1,191 @@
+{
+    "documentation": {
+        "cmdline": "Use with snakemake --cluster-config cluster.slurm.cheaha.json --cluster 'sbatch --job-name {cluster.job-name} --ntasks {cluster.ntasks} --nodes {cluster.nodes-number} --mem {cluster.memPerNode} --cpus-per-task {cluster.cores-number} --mem-per-cpu {cluster.mem-per-cpu} --partition {cluster.partition} --time {cluster.time} --mail-user {cluster.mail-user} --mail-type {cluster.mail-type} --error {cluster.error} --output {cluster.output}'"
+    },
+    "__default__" : {
+        "job-name"       : "{rule}.Chagas",
+        "project"        : "b178",
+        "partition"      : "skylake",
+        "time"           : "1:00:00",
+        "nodes-number"   : 1,
+        "cores-number"   : 2,
+        "ntasks"         : 1,
+        "cpus-per-task"  : 1,
+        "mem-per-cpu"    : 5900,
+        "output"         : "06.Log/%j.%a.out",
+        "error"          : "06.Log/%j.%a.err",
+        "mail-user"      : "pauline.brochet@univ-amu.fr",
+        "mail-type"      : "ALL"
+    },
+    "convertSRA" : {
+        "nodes-number"   : 1,
+        "cores-number"   : 10,
+        "time"           : "00:30:00"
+    },
+    "fastQC" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 5,
+        "time"          : "00:30:00"
+    },
+    "multiQC_raw" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 2,
+        "time"          : "00:30:00"
+    },
+    "Trimmomatic" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 10,
+        "time"          : "01:00:00"      
+    },
+    "fastQC2" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 5,
+        "time"          : "01:00:00"
+    },
+    "index" : {
+        "nodes-number"   : 1,
+        "cores-number"   : 4,
+        "mem-per-cpu"    : 35000,
+        "time"           : "02:00:00"
+    },
+    "STAR" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 10,
+        "time"          : "00:30:00"
+    },
+    "bamQC" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 4,
+        "mem-per-cpu"   : 35000,
+        "time"          : "01:30:00"
+    },
+    "FeatureCounts" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 10,
+        "time"          : "04:00:00"
+    },
+    "compressFASTQ" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 10,
+        "time"          : "02:00:00"
+    },
+    "alignment" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 10,
+        "time"          : "01:00:00"
+    },
+    "multiQC" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 2,
+        "time"          : "01:00:00"
+    },
+    "DEG_analysis" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 2,
+        "time"          : "01:00:00"
+    },
+    "extractReads" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 10,
+        "time"          : "00:30:00"
+    },
+    "genotype" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 10,
+        "time"          : "00:30:00"
+    },
+    "genotypePartial" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 10,
+        "time"          : "00:30:00"
+    },
+    "mergeGenotype" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 10,
+        "time"          : "00:30:00"
+    },
+    "mergeGenotypePartial" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 10,
+        "time"          : "00:30:00"
+    },
+    "Tissue_methylation" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 4,
+        "mem-per-cpu"   : 35000,
+        "time"          : "00:30:00"
+    },
+    "OlogramPairwise1" : {
+        "nodes-number" : 1,
+	    "cores-number"	: 2,
+        "time"           : "01:00:00"
+    },
+    "OlogramPairwise2" : {
+        "nodes-number" : 1,
+	    "cores-number"	: 2,
+        "time"           : "01:00:00"
+    },
+    "OlogramPairwise3" : {
+        "nodes-number" : 1,
+	    "cores-number"	: 2,
+        "time"           : "01:00:00"
+    },
+    "OlogramPairwise4" : {
+        "nodes-number" : 1,
+	    "cores-number"	: 2,
+        "time"           : "01:00:00"
+    },
+    "OlogramPairwise5" : {
+        "nodes-number" : 1,
+	    "cores-number"	: 2,
+        "time"           : "01:00:00"
+    },
+    "OlogramPairwise6" : {
+        "nodes-number" : 1,
+	    "cores-number"	: 2,
+        "time"           : "01:00:00"
+    },
+    "OlogramNwise" : {
+        "nodes-number" : 2,
+        "cores-number"	: 24,
+        "memPerNode" : "MaxMemPerNode",
+        "mem-per-cpu"    : "MaxMemPerCPU",
+        "time"           : "02:00:00"
+    },
+    "Ologram_graph"  : {
+        "nodes-number" : 1,
+	    "cores-number"	: 2,
+        "time"           : "01:00:00"
+    },
+    "Blood_methylation" : {
+        "nodes-number"	: 1,
+        "cores-number"	: 4,
+        "mem-per-cpu"   : 35000,
+        "time"          : "01:00:00"
+    },
+    "DL_databases" : {
+        "nodes-number" : 1,
+	    "cores-number"	: 2,
+        "time"           : "00:30:00"
+    },
+    "ncRNA_analysis" : {
+        "nodes-number" : 1,
+	    "cores-number"	: 2,
+        "time"           : "00:30:00"
+    },
+    "dlDB" : {
+        "nodes-number" : 1,
+	    "cores-number"	: 2,
+        "time"           : "00:30:00"
+    },
+    "buildDB" : {
+        "nodes-number" : 1,
+	    "cores-number"	: 2,
+        "time"           : "00:30:00"
+    },
+    "cellType" : {
+        "nodes-number" : 1,
+	    "cores-number"	: 2,
+        "time"           : "01:00:00"
+    }
+}
