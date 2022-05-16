@@ -1,5 +1,5 @@
 
-# Specific methylation marks in promoter regions are associated to the pathogenic process of Chronic Chagas disease Cardiomyopathy by modifying transcription factor binding patterns 
+# Epigenetic regulation of transcription factor binding motifs promotes Th1 response in Chagas disease Cardiomyopathy
 
 ## Article information
 
@@ -65,10 +65,11 @@ Christophe Chevillard, PhD
 Abstract :
 
 
-Chagas disease, caused by Trypanosoma cruzi, is an endemic parasitical disease of Latin America, affecting 7 million people. Although most patients are asymptomatic, 30% develop complications, including Chronic Chagasic Cardiomyopathy (CCC), which ranges from moderate to severe stages depending on the cardiac ejection fraction. The pathogenic process remains poorly understood, although genetic and epigenetic factors have already been proposed. 
+Chagas disease, caused by the protozoan Trypanosoma cruzi, is an endemic parasitic disease of Latin America, affecting 7 million people. Although most patients are asymptomatic, 30% develop complications, including the often-fatal Chronic Chagasic Cardiomyopathy (CCC). The pathogenic process remains poorly understood. 
 
-Based on bulk RNA-seq and EPIC methylation data, we investigated the genetic and epigenetic deregulations present in the moderate and severe stages of CCC. We identified 4 main biological processes associated with the pathology development, including immune response, ion transport, cardiac muscle processes and nervous system. An in-depth study of the transcription factors binding sites in the differentially methylated regions corroborated the importance of these processes. We also conducted a methylation study on blood to identify potential biomarkers for CCC. Our data revealed 198 differentially methylated positions (DMPs) that could serve as biomarkers of the disease, of which 61 are associated with disease severity.
+Based on bulk RNA-seq and whole genome DNA methylation data, we investigated the genetic and epigenetic deregulations present in the moderate and severe stages of CCC. Based on heart tissue gene expression profile, we had identified 1407 differentially expressed transcripts (DEGs) specific from CCC patients. A tissue DNA methylation analysis done on the same tissue has permitted the identification of 92 regulatory Differentially Methylated Regions (DMR) localized in the promoter of DEGs. An in-depth study of the transcription factors binding sites (TFBS) in the DMRs corroborated the importance of TFBS’s DNA methylation for gene expression in CCC myocardium. TBX21, RUNX3 and EBF1 are the transcription factors whose binding motif appears to be affected by DNA methylation in the largest number of genes. 
 
+By combining both transcriptomic and methylomic analysis on heart tissue, and methylomic analysis on blood, 4 biological processes affected by severe CCC have been identified, including immune response, ion transport, cardiac muscle processes and nervous system. An additional study on blood methylation of moderate CCC samples put forward the importance of ion transport and nervous system in the development of the disease.
 
 
 
