@@ -3,7 +3,7 @@
 
 ## Article information
 
-Title : Specific methylation marks in promoter regions are associated to the pathogenic process of Chronic Chagas disease Cardiomyopathy by modifying transcription factor binding patterns
+Title : Epigenetic regulation of transcription factor binding motifs promotes Th1 response in Chagas disease Cardiomyopathy
 
 Authors : Pauline Brochet1, Barbara Ianni2, Laurie Laugier3, Amanda Farage Frade2,4,5, João Paulo Silva Nunes1,2,4,5, Priscila Camillo Teixeira2,4,5, Charles Mady6, Ludmila Rodrigues Pinto Ferreira7, Quentin Ferré1, Ronaldo Honorato Barros Santos8, Andreia Kuramoto2 , Sandrine Cabantous3, Samuel Steffen8,9, Antonio Noedir Stolf9, Pablo Pomerantzeff10, Alfredo Inacio Fiorelli9, Edimar A Bocchi9, Cristina Wide Pissetti11, Bruno Saba12, Darlan da Silva Cândido2,4,5, Fabrício Dias13, Marcelo Sampaio12, Fabio Antônio Gaiotto8,9, José Antonio Marin-Neto13, Abílio Fragata12, Ricardo Costa Fernandes Zaniratto2, Sergio Siqueira14, Giselle de lima Peixoto14, Vagner Oliveira-Carvalho Rigaud2,15, Fernando Bacal8, Paula Buck10, Rafael Almeida Ribeiro2,4,5, Hui Tzu Lin-Wang12, José Antonio Marin-Neto13, André Schmidt13, Martino Martinelli14, Mario Hiroyuki Hirata16, Eduardo Donadi13, Alexandre Costa Pereira10, Virmondes Rodrigues Junior11, Denis Puthier1, Benoit Ballester1, Pierre Milpied17, Jorge Kalil2,4,5, Lionel Spinelli1,17,c, Edecio Cunha-Neto2,4,5,*,c, Christophe Chevillard1,*,c. 
 
